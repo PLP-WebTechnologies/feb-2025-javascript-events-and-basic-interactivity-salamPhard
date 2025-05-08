@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn Javascript for Web Development">
+    <link rel="stylesheet" href="style.css">
+    <title>My Js Home</title>
+</head>
+<body>
+<header id="main_header">
+    <h1>Welcome to the JavaScript Fruit Class</h1>
+    <p>If you are a chef, no matter how good a chef you are, it's not good cooking for yourself; the joy is in cooking for others.</p>
+</header>
+<div id="main" class="row">
+    <div id="left_main" class="column">
+        <h2 id="changeMe" onmouseover="changeMyColor();" onmouseout="returnMyColor();">Are you a good JavaScript Cookery person?</h2>
+        <h3>Register here to have a great opportunity from us</h3>
+    <form id="myForm">
+        <label for="username">username</label><br>
+        <input type="text" name="username" placeholder="Enter your username"><br>
+        <label for="Password">Password</label><br>
+        <input type="password"  id = "mypassword" name="password"><br>
+        <p id="passwordValidation"></p>
+        <label for="email">Email</label><br>
+        <input type="text" name="emailId" id="myemail"><br>
+         <p id="error"></p>
+        <button type="submit" id="confirm">Register</button>
+    </form>
+    </div>
+    <div id="right_main" class="column">
+        <img src="https://images.pexels.com/photos/1234567/pexels-photo-1234567.jpeg" id="quoteImage"><br>
+        <button onclick="showModal();" id="openModalBtn" >Send Quote</button>
+    </div>
+    <!--Modal Creation-->
+    <div id="modals" style="display:none; position:fixed; top:10%; left:50% transform:translate(-50%, -50%); padding:20px; background:white; box-shadow:0 0 10px rgba(0,0,0,0.5);">
+    <form id="myModalForm">
+        <label for="Firstname">Name</label><br>
+        <input type="text" name="firstname" placeholder="enter your name"> <br>
+        <label for="phone">Phone</label><br>
+        <input type="number" name="phone"><br>
+        <label for="comment">Comment</label><br>
+       <textarea></textarea>
+        <button type="submit" id="submitMe">Register</button>
+        <button id="closeModal">Cancel</button>
+    </form>
+    </div>
+    <!--End of modal -->
+</div>
+<div>
+<div class="gallery">
+    <a target="_blank" href="https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg?auto=compress&cs=tinysrgb&w=600">
+    <img src="https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg" width="800" height="400">
+    </a>
+    <div class="description">Abdusalaam Fruity Cookery</div>
+</div>
+<div class="gallery">
+    <a target="_blank" href="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=600">
+    <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg" width="600" height="400">
+    </a>
+    <div class="description">Rayhaan Shop</div>
+</div>
+<div class="gallery">
+    <a target="_blank" href="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=600">
+    <img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg" width="600" height="400">
+    </a>
+    <div class="description">Firdaos Food Farm</div>
+</div>
+<div class="gallery">
+    <a target="_blank" href="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=600">
+    <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg" width="600" height="400">
+    </a>
+    <div class="description">Nadrah Tasty Corner</div>
+</div>
+</div>
+<footer>
+    <p>Copyright &copy Abdusalaam JavaScript Cooking Class</p>
+</footer>
+<script src="script.js"></script>
+</body>
+
+</html>
